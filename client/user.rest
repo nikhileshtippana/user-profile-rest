@@ -1,0 +1,48 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users?sort=-updatedAt
+
+###
+GET http://localhost:3000/users?exact&keyword=5852032399
+
+###
+GET http://localhost:3000/users?exact&firstName=Priyanka
+
+###
+GET http://localhost:3000/users/6254cc77f91a18bfbd12cf5a
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "Priyanka",
+    "middleName": "Reddy",
+    "lastName": "Tera",
+    "email": "tera.priyanka66@gmail.com",
+    "phone": "5852031234",
+    "createdAt": "2022-04-10T21:52:23.904Z",
+    "createdBy": "Nikhilesh Tippana",
+    "updatedAt": "",
+    "updatedBy": ""
+}
+
+###
+PUT http://localhost:3000/users/62548990718eccf2b3b3867e
+Content-Type: application/json
+
+{
+    "firstName": "Priyanka",
+    "middleName": "Reddy",
+    "lastName": "Tera",
+    "email": "tera.priyanka66@gmail.com",
+    "phone": "5852031234",
+    "createdAt": "2022-04-10T21:52:23.904Z",
+    "createdBy": "Nikhilesh Tippana",
+    "updatedAt": "2022-04-11T22:06:23.405Z",
+    "updatedBy": "Priyanka Tera"
+}
+
+###
+DELETE http://localhost:3000/users/6254cc77f91a18bfbd12cf5a

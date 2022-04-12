@@ -1,0 +1,22 @@
+{
+  "name": "user-profile-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "author": "Nikhilesh Tippana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "keyv": "^4.2.2",
+    "mongoose": "^6.2.10",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
